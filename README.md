@@ -1,4 +1,4 @@
-# Enterprise GraphRAG Engine 
+# Enterprise GraphRAG Engine 🚀
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![LangGraph](https://img.shields.io/badge/Orchestration-LangGraph-orange)
@@ -21,74 +21,5 @@ graph TD
     C --> D[Synthesized Answer Node]
     D --> E[Ragas Evaluation Node]
     E --> F[API Response]
-Vector Retrieval: Fetches semantically similar chunks from a vector store using dense embeddings.
 
-Graph Traversal: Extracts related entities and relational edges to preserve context across complex documents.
 
-Synthesis: Merges dual context streams into a grounded, comprehensive LLM generation.
-
-Automated Evaluation: Programmatically assesses context precision and answer faithfulness using Ragas.
-
- Tech Stack
-Orchestration: LangGraph, LangChain
-
-API Framework: FastAPI, Uvicorn
-
-Evaluation: Ragas (Retrieval-Augmented Generation Assessment)
-
-Databases: PostgreSQL (pgvector), Neo4j (Graph storage)
-
-LLM Integration: OpenAI API / Custom LLM Gateways
-
- Getting Started Locally
-Prerequisites
-Python 3.10 or higher
-
-Git
-
-Installation & Setup
-Clone the repository:
-
-Bash
-git clone [https://github.com/Valentina14142000/enterprise-graphrag-engine.git](https://github.com/Valentina14142000/enterprise-graphrag-engine.git)
-cd enterprise-graphrag-engine
-Create and activate a virtual environment:
-
-Bash
-python -m venv venv
-source venv/bin/activate  # On Windows use: .\venv\Scripts\Activate.ps1
-Install dependencies:
-
-Bash
-pip install -r requirements.txt
-Configure environment variables:
-Create a .env file in the root directory and add your API keys:
-
-Code snippet
-OPENAI_API_KEY=your_openai_api_key_here
-Run the FastAPI server:
-
-Bash
-uvicorn app.main:app --reload
- API Usage
-Once the server is running, you can access the interactive Swagger UI documentation at:
-http://127.0.0.1:8000/docs
-
-Example cURL Request:
-Bash
-curl -X 'POST' \
-  '[http://127.0.0.1:8000/query](http://127.0.0.1:8000/query)' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "query": "How do we handle multi-region data compliance?"
-}'
-Example Response:
-JSON
-{
-  "query": "How do we handle multi-region data compliance?",
-  "generation": "Synthesized enterprise response based on hybrid graph and vector context.",
-  "faithfulness_score": 0.96
-}
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
