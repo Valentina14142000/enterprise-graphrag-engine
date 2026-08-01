@@ -1,0 +1,9 @@
+langgraph
+langchain
+langchain-openai
+fastapi
+uvicorn
+psycopg2-binary
+ragas
+pydantic-settings
+python-dotenv
