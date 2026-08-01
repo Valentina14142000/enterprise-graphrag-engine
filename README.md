@@ -1,4 +1,4 @@
-# Enterprise GraphRAG Engine 🚀
+# Enterprise GraphRAG Engine 
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![LangGraph](https://img.shields.io/badge/Orchestration-LangGraph-orange)
