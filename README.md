@@ -21,5 +21,61 @@ graph TD
     C --> D[Synthesized Answer Node]
     D --> E[Ragas Evaluation Node]
     E --> F[API Response]
+```
 
+Vector Retrieval: Fetches semantically similar chunks from a vector store using dense embeddings.
+
+Graph Traversal: Extracts related entities and relational edges to preserve context across complex documents.
+
+Synthesis: Merges dual context streams into a grounded, comprehensive LLM generation.
+
+Automated Evaluation: Programmatically assesses context precision and answer faithfulness using Ragas.
+
+##  Tech Stack
+Orchestration: LangGraph, LangChain
+
+API Framework: FastAPI, Uvicorn
+
+Evaluation: Ragas (Retrieval-Augmented Generation Assessment)
+
+Databases: PostgreSQL (pgvector), Neo4j (Graph storage)
+
+LLM Integration: OpenAI API / Custom LLM Gateways
+
+##  Getting Started Locally
+Prerequisites
+Python 3.10 or higher
+Git
+
+##  Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Valentina14142000/enterprise-graphrag-engine.git](https://github.com/Valentina14142000/enterprise-graphrag-engine.git)
+   cd enterprise-graphrag-engine
+
+##  API Usage
+Once the server is running, access the interactive Swagger UI documentation at:
+http://127.0.0.1:8000/docs
+
+Example cURL Request:
+Bash
+curl -X 'POST' \
+  '[http://127.0.0.1:8000/query](http://127.0.0.1:8000/query)' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": "How do we handle multi-region data compliance?"
+}'
+Example Response:
+JSON
+{
+  "query": "How do we handle multi-region data compliance?",
+  "generation": "Synthesized enterprise response based on hybrid graph and vector context.",
+  "faithfulness_score": 0.96
+}
+
+
+##  License
+Distributed under the MIT License. See LICENSE for more information.
 
