@@ -58,23 +58,6 @@ Git
 Once the server is running, access the interactive Swagger UI documentation at:
 http://127.0.0.1:8000/docs
 
-Example cURL Request:
-Bash
-curl -X 'POST' \
-  '[http://127.0.0.1:8000/query](http://127.0.0.1:8000/query)' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "query": "How do we handle multi-region data compliance?"
-}'
-Example Response:
-JSON
-{
-  "query": "How do we handle multi-region data compliance?",
-  "generation": "Synthesized enterprise response based on hybrid graph and vector context.",
-  "faithfulness_score": 0.96
-}
-
 
 ##  📄 License
 Distributed under the MIT License. See LICENSE for more information.
