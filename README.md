@@ -51,7 +51,7 @@ Git
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/Valentina14142000/enterprise-graphrag-engine.git](https://github.com/Valentina14142000/enterprise-graphrag-engine.git)
+   git clone github repository
    cd enterprise-graphrag-engine
 
 ##  API Usage
